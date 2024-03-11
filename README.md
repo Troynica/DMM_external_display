@@ -8,10 +8,11 @@ Initially, I bought the Owon XDM2041 because it is cheap and it has a HY3131 bas
 To reach my goal I used:
 - ATmega 32U4 based dev board (Arduino Pro Micro)
 - TTL UART to RS232 converter (MAX232 + 4 C 1µF/25V)
-- 6 7-segment LED display
-- 6 xx595 shift registers + decoup. C
+- 6 7-segment LED display (one of 'em is only used for '-')
+- 5 xx595 shift registers + decoup. C
 - 3  8x8 dot matrix LED display
 - 3 MAX2719 dot matrix display driver
+- Rob Tillaart's MATRIX7219 Arduino library present in the Arduino IDE
 
 
 I used an Arduino Pro Micro board (which has an Atmel ATmega32U4). I could have used any popular Arduino boards, but this controller has both USB and UART, so I could use the USB serial for programming and debugging while keeping connection with the multimeter. The code will run on ATmega's with small modifications (you'll figure it out).
